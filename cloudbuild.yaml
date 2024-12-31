@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloudbuilders/docker'
+  args: ['build', '-t', 'gcr.io/kubflow-tfx/docker-app', '.']
+- name: 'gcr.io/cloudbuilders/docker'
+  args: ['push', 'gcr.io/kubflow-tfx/docker-app']
