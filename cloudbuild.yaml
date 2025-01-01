@@ -5,7 +5,7 @@ steps:
   args: ['push', 'gcr.io/lyrical-virtue-446215-s6/docker-app']
 logsBucket: 'gs://tfx_logs'
 options:
-  logging: NONE
+  logging: GCS_ONLY
 
 
   
