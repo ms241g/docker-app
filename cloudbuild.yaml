@@ -1,8 +1,8 @@
 steps:
 - name: 'gcr.io/cloudbuilders/docker'
-  args: ['build', '-t', 'gcr.io/kubflow-tfx/docker-app', '.']
+  args: ['build', '-t', 'gcr.io/lyrical-virtue-446215-s6/docker-app', '.']
 - name: 'gcr.io/cloudbuilders/docker'
-  args: ['push', 'gcr.io/kubflow-tfx/docker-app']
+  args: ['push', 'gcr.io/lyrical-virtue-446215-s6/docker-app']
 logsBucket: 'gs://tfx_logs'
 options:
   logging: GCS_ONLY
