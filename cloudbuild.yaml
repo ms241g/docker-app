@@ -3,8 +3,9 @@ steps:
   args: ['build', '-t', 'gcr.io/kubflow-tfx/docker-app', '.']
 - name: 'gcr.io/cloudbuilders/docker'
   args: ['push', 'gcr.io/kubflow-tfx/docker-app']
+logsBucket: 'gs://tfx_logs'
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: GCS_ONLY
 
 
   
