@@ -1,7 +1,7 @@
 steps:
-- name: 'gcr.io/cloudbuilders/docker'
+- name: 'docker'
   args: ['build', '-t', 'gcr.io/lyrical-virtue-446215-s6/docker-app', '.']
-- name: 'gcr.io/cloudbuilders/docker'
+- name: 'docker'
   args: ['push', 'gcr.io/lyrical-virtue-446215-s6/docker-app']
 logsBucket: 'gs://tfx_logs'
 options:
